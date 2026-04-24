@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $res = $conn->query("SELECT * FROM users WHERE email='$email'");
 
     if($res && $res->num_rows > 0){
-
+    //push code
         $user = $res->fetch_assoc();
 
         // ✅ COMPARE PASSWORD (PLAIN TEXT)
